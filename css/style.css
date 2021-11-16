@@ -137,3 +137,51 @@ h6 {
     font-size: 20px;
     padding-bottom: 36px;
 }
+
+/* Стили формы */
+.form {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 129px;
+}
+
+.form__block {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 476px;
+    border: 1px solid #ededed;
+    border-radius: 20px;
+    box-shadow: 0 1px 8px 4px rgba(0, 0, 0, 0.03);
+}
+
+.form__field {
+    width: 327px;
+    height: 50px;
+    margin-bottom: 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 31px;
+    border: 1px solid rgba(115, 82, 255, 0);
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.form__submit {
+    position: absolute;
+    width: 149px;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: block;
+    padding-left: 49px;
+    border-radius: 21px 0 0 21px;
+    background-color: rgb(115, 82, 255);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+}
