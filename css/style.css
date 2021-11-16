@@ -77,3 +77,47 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
+
+/* Начало */
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1073px;
+    margin: 0px auto;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__img {
+    width: 70px;
+    height: 30px;
+}
+
+.navbar__link {
+    color: #222;
+}
+.navbar__text {
+    color: #222;
+    font-size: 14px;
+}
