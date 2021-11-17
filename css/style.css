@@ -500,3 +500,23 @@ h6 {
 .person-box__logo {
     height: 25px;
 }
+
+/*Медиа запросы*/
+
+@media screen and (max-width: 1073px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 450px;
+    }
+}
