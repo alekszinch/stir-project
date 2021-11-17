@@ -112,8 +112,8 @@ h6 {
 }
 
 .navbar__img {
-    width: 70px;
-    height: 30px;
+    max-width: 70px;
+    max-height: 30px;
 }
 
 .navbar__link {
@@ -154,15 +154,15 @@ h6 {
     position: relative;
     display: flex;
     overflow: hidden;
-    width: 476px;
+    max-width: 476px;
     border: 1px solid #ededed;
     border-radius: 20px;
     box-shadow: 0 1px 8px 4px rgba(0, 0, 0, 0.03);
 }
 
 .form__field {
-    width: 327px;
-    height: 50px;
+    max-width: 327px;
+    max-height: 50px;
     margin-bottom: 0;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -229,7 +229,7 @@ h6 {
 }
 
 .gallery__img {
-    height: 264px;
+    max-height: 264px;
     margin-top: 24px;
 }
 
@@ -248,7 +248,7 @@ h6 {
 }
 
 .gallery-social__icon {
-    width: 28px;
+    max-width: 28px;
     align-self: center;
     padding-bottom: 12px;
 }
@@ -389,4 +389,116 @@ h6 {
 .linkboard__img {
     max-width: 1027px;
     order: -1;
+}
+
+/* Стили блока people */
+
+.person {
+    display: flex;
+    height: auto;
+    margin-top: -67px;
+    padding-top: 236px;
+    padding-bottom: 160px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+}
+
+/* Стилизация текста */
+.person__h {
+    font-size: 40px;
+    padding-bottom: 102px;
+}
+
+/* Стилизация слайдера */
+.person__mask {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-auto-columns: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.person-slider__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.person-slider__mask {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.person-slider__img {
+    position: relative;
+    display: flex;
+    margin-left: 69px;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    max-width: 752px;
+    max-height: 429px;
+}
+
+.person-slider__outline {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Стили для стрелок */
+.person-slider__arrow {
+    display: inline-block;
+    padding-top: 92px;
+    cursor: pointer;
+}
+
+.person-slider__arrow.left {
+    padding-right: 16px;
+}
+
+.person-slider__arrow.right {
+    padding-left: 16px;
+}
+
+.person-slider__box.right {
+    transform: rotate(180deg);
+}
+/* Стилизация текста */
+.person-box__title {
+    padding-top: 97px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.5;
+}
+/* Стилизация логотипов */
+.person-box__img {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 0px;
+    opacity: 1;
+}
+
+.person-box__logo {
+    max-height: 25px;
 }
