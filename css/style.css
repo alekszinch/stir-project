@@ -304,3 +304,89 @@ h6 {
     border-radius: 4px;
     padding: 10px;
 }
+
+/* Стили блока с меню и картинкой */
+
+.figure {
+    position: relative;
+    margin-top: -16px;
+}
+
+.figure__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1039px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+}
+
+.linkboard {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #7349ff;
+    background-position: 98% 2%, 2% 2%;
+    background-repeat: no-repeat, no-repeat;
+    box-shadow: 0 -16px 64px 0 rgba(43, 42, 53, 0.32);
+}
+
+/* Стилизация меню */
+.linkboard__menu {
+    z-index: 1;
+    display: flex;
+    padding: 16px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkboard__link {
+    position: relative;
+    display: flex;
+    padding-left: 36px;
+    align-items: center;
+    order: -1;
+    background-color: transparent;
+    opacity: 10px;
+}
+
+.linkboard__icon {
+    width: 18px;
+    position: relative;
+    z-index: 2;
+    padding-left: 6px;
+}
+
+.linkboard__label {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+/* Стили блока картинки */
+.linkboard__content {
+    margin: 0 6px 6px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.linkboard__inner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.linkboard__img {
+    max-width: 1027px;
+    order: -1;
+}
