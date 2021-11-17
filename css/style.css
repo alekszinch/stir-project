@@ -1,4 +1,3 @@
-/*Обнуляющие стили*/
 * {
     padding: 0;
     margin: 0;
@@ -102,6 +101,7 @@ h6 {
 }
 
 .navbar {
+    background-color: #fff;
     padding: 14px 0;
 }
 
@@ -112,20 +112,19 @@ h6 {
 }
 
 .navbar__img {
-    max-width: 70px;
-    max-height: 30px;
+    width: 70px;
+    height: 30px;
 }
 
 .navbar__link {
-    color: #222;
+    color: #222222;
 }
 .navbar__text {
-    color: #222;
+    color: #222222;
     font-size: 14px;
 }
 
 /* Стили текста */
-
 .header {
     padding-top: 127px;
     text-align: center;
@@ -142,7 +141,6 @@ h6 {
 }
 
 /* Стили формы */
-
 .form {
     display: flex;
     width: 40%;
@@ -154,15 +152,15 @@ h6 {
     position: relative;
     display: flex;
     overflow: hidden;
-    max-width: 476px;
+    width: 476px;
     border: 1px solid #ededed;
     border-radius: 20px;
     box-shadow: 0 1px 8px 4px rgba(0, 0, 0, 0.03);
 }
 
 .form__field {
-    max-width: 327px;
-    max-height: 50px;
+    width: 327px;
+    height: 50px;
     margin-bottom: 0;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -229,7 +227,7 @@ h6 {
 }
 
 .gallery__img {
-    max-height: 264px;
+    height: 264px;
     margin-top: 24px;
 }
 
@@ -248,7 +246,7 @@ h6 {
 }
 
 .gallery-social__icon {
-    max-width: 28px;
+    width: 28px;
     align-self: center;
     padding-bottom: 12px;
 }
@@ -314,7 +312,6 @@ h6 {
 
 .figure__container {
     display: flex;
-    width: 100%;
     height: 100%;
     max-width: 1039px;
     margin-top: 0;
@@ -497,8 +494,9 @@ h6 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 0px;
     opacity: 1;
+    padding-top: 42px;
 }
 
 .person-box__logo {
-    max-height: 25px;
+    height: 25px;
 }
