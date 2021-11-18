@@ -238,6 +238,7 @@ h6 {
 
 .gallery__position {
     border-top: 1px solid #f7f2e4;
+    width: 89px;
     padding-top: 7px;
     margin-right: 12px;
     font-size: 10px;
@@ -268,7 +269,6 @@ h6 {
 /* Стилизация блока с соц. сетями нижнее позиционирование*/
 .bottom-social {
     position: absolute;
-    width: 52px;
     left: 234px;
     bottom: 55px;
     background: #ffffff;
@@ -292,7 +292,6 @@ h6 {
 /* Стилизация блока с соц. сетями позиционирование вверху*/
 .top-social {
     position: absolute;
-    width: 52px;
     left: -26px;
     top: 55px;
     background: #ffffff;
@@ -420,15 +419,15 @@ h6 {
 /* Стилизация слайдера */
 .person__mask {
     display: flex;
-    overflow: hidden;
-    width: 100%;
+    width: 1400px;
     flex-direction: row;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    grid-auto-columns: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-auto-columns: 69px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    overflow: hidden;
 }
 
 .person-slider__inner {
@@ -451,8 +450,14 @@ h6 {
     flex-direction: column;
     align-items: center;
     flex: 0 0 auto;
+}
+
+.person-slider__i1 {
     max-width: 752px;
-    max-height: 429px;
+}
+
+.person-slider__i {
+    max-width: 684px;
 }
 
 .person-slider__outline {
