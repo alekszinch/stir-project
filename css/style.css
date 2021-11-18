@@ -86,7 +86,6 @@ h6 {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
 }
@@ -94,6 +93,7 @@ h6 {
 .container {
     max-width: 1073px;
     margin: 0px auto;
+    padding: 0 15px;
 }
 
 .content {
@@ -162,9 +162,7 @@ h6 {
     width: 327px;
     height: 50px;
     margin-bottom: 0;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    padding-left: 31px;
+    padding: 21px 0px 21px 31px;
     border: 1px solid rgba(115, 82, 255, 0);
     border-radius: 20px;
     background-color: #fff;
@@ -348,14 +346,13 @@ h6 {
     align-items: center;
     order: -1;
     background-color: transparent;
-    opacity: 10px;
+    opacity: 1;
 }
 
 .linkboard__icon {
     width: 18px;
     position: relative;
     z-index: 2;
-    padding-left: 6px;
 }
 
 .linkboard__label {
@@ -386,6 +383,17 @@ h6 {
 .linkboard__img {
     max-width: 1027px;
     order: -1;
+}
+
+/*Медиа запросы*/
+@media (max-width: 1027px) {
+    .linkboard__menu {
+        max-width: 900px;
+    }
+
+    .linkboard__img {
+        max-width: 900px;
+    }
 }
 
 /* Стили блока people */
@@ -513,10 +521,53 @@ h6 {
     .container {
         max-width: 750px;
     }
+
+    .linkboard__menu {
+        max-width: 750px;
+    }
+
+    .linkboard__img {
+        max-width: 750px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .container {
         max-width: 450px;
+    }
+
+    .linkboard {
+
+    }
+
+    .linkboard__menu {
+        z-index: 1;
+        max-width: 420px;
+    }
+
+    .linkboard__link {
+        padding-left: 15px;
+        justify-content: center;
+    }
+
+    .linkboard__img {
+        max-width: 410px;
+    }
+
+    .form {
+        width: 200px;
+    }
+
+    .form__field {
+        width: 200px;
+        height: 100px;
+        padding: 0 0 45px 55px;
+    }
+
+    .form__submit {
+        width: 200px;
+        top: 50px;
+        border-radius: 0 0 0 21px;
+        padding-left: 70px;
     }
 }
